@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* font 정의  - NotoSansKR*/
+@font-face {
+    font-family:"Thin";
+    src: url("../fonts/NotoSansKR-Thin.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Regular";
+    src: url("../fonts/NotoSansKR-Regular.otf");
+    font-weight:norma;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Medium";
+    src: url("../fonts/NotoSansKR-Medium.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Light";
+    src: url("../fonts/NotoSansKR-Light.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Bold";
+    src: url("../fonts/NotoSansKR-Bold.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Black";
+    src: url("../fonts/NotoSansKR-Black.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* Color - https://color.adobe.com/ko/search?q=sky&page=1 */
+/* blue : #82A8D9 */
+/* light blue : #A0BED9*/
+/* gray : #556573 */
+/* graywhite : #EBEFF2 */
+/* black : #0D0D0D */
+
+
+/* common */
+* {box-sizing:border-box; margin:0; padding:0; border:0; font-weight:normal; outline:none;}
+html {position:relative; min-height:100%;}
+body {font-family:"Medium", sans-serif; color:#0D0D0D; line-height:1.6; margin:0; font-size:16px; background:#A0BED9;}
+ul, li {list-style:none;}
+p, span {padding:0; margin:0;}
+a {text-decoration:none; }
+
+
+.wrap {position:relative; width:100%; height:100%; background:A0BED9;}
+#header {position:fixed; width:230px; height:100%; background:#556573; z-index:100; transition:all 0.3s ease;}
+.leftbar {}
+.navigator {height:calc(100vh - 0px); overflow:auto; transition:0.3s all ease; box-shadow: 0 0 10px rgba(0,0,0,0.4);}
+.navigator-left {position:relative; height:100%; width:50px; float:left; color:#EBEFF2; text-align:center;}
+.navigator-left a {color:#EBEFF2;}
+.navigator-left ul {position:absolute; bottom:50px; width:100%;}
+.navigator-left ul li {margin:2px; padding:10px 0; border-radius:15px; transition:all 0.15s ease;}
+.navigator-left ul li:hover {background-color:#EBEFF2a6;}
+.navigator-left ul li:hover a {color:#556573;}
+.navigator-left .navi-on {background-color:#EBEFF2a6;}
+.navigator-left .navi-on a {color:#556573;}
+
+
+.navigator-right {height:100%; width:180px; background:#EBEFF2; float:right;}
