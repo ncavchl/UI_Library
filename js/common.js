@@ -6,9 +6,9 @@ $(document).ready(function(){
         $("#content").toggleClass('fold');
     });
 
-    $('.subbox-title').on('click',function(){
-        $(this).parents().siblings('.subbox-list').toggleClass('on');
-        $(this).siblings('img').toggleClass('on');
+    $('.subtitlebox').on('click',function(){
+        $(this).siblings('.subbox-list').toggleClass('on');
+        $(this).children('img').toggleClass('on');
     });
 
 });
