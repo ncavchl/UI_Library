@@ -85,7 +85,7 @@ a {display: inline-block; text-decoration:none; }
 
 .navigator-right {height:100%; width:180px; background:#fff; float:right; overflow:auto; transition:all 0.1s ease;} 
 .logobox {position:relative; padding:15px 0; text-align:center; font-size:25px; font-family:"Black"; margin-bottom:10px; cursor:pointer;}
-.logobox:before {width: 15px; height: 2px; background: #556573; content: ""; position: absolute; left: 0; top: 65px; animation-name:logomove; animation-duration:3s; animation-iteration-count:infinite;}
+/* .logobox:before {width: 15px; height: 2px; background: #556573; content: ""; position: absolute; left: 0; top: 65px; animation-name:logomove; animation-duration:3s; animation-iteration-count:infinite;} */
 .menubox {padding:0 10px; width:100%; font-family:"Regular";}
 .mainmenu {font-size:18px; background:#ebeff2; padding:7px 0; text-align:center; border-radius:10px; margin-bottom:15px; font-family:"Medium"; cursor:pointer;}
 
