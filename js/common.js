@@ -11,4 +11,14 @@ $(document).ready(function(){
         $(this).children('img').toggleClass('on');
     });
 
+    $('.searchbox').keyup(function(){
+        $('.searcbox-icon').css('display','block');
+    });
+
+    $('.searcbox-icon').on('click', function(){
+        $('.searchbox').val('');
+        $(this).css('display','none');
+    });
+
+
 });
