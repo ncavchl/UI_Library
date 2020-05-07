@@ -40,6 +40,5 @@ $(document).ready(function(){
     //     $('.alarmimg').css('animation-duration', '-0.5s');
     // });
 
-
 });
 
