@@ -22,5 +22,9 @@ $(document).ready(function(){
         $('.searchbox').css('border-bottom', 'none');
     });
 
+    // $('.clickk').on('click', function(){
+    //     $('.alarmimg').css('animation-duration', '-0.5s');
+    // });
+
 
 });
