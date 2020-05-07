@@ -49,7 +49,7 @@
 /* common */
 * {box-sizing:border-box; margin:0; padding:0; border:0; font-weight:normal; outline:none;}
 html {position:relative; min-height:100%;}
-body {font-family:"regular", sans-serif; color:#0D0D0D; line-height:1.6; margin:0; font-size:16px; background:#A0BED9;}
+body {font-family:"regular", sans-serif; color:#0D0D0D; line-height:1.6; margin:0; font-size:14px; background:#F2F2F2;}
 ul, li {list-style:none;}
 p, span {padding:0; margin:0;}
 a {display: inline-block; text-decoration:none; }
@@ -61,7 +61,7 @@ input {font-family: "Medium", sans-serif;}
 #header.fold {width:80px;}
 #header.fold .navigator {width:50px;}
 #header.fold .navigator .navigator-right {left:-180px;}
-#header.fold .navi-showbtn {left:50px;}
+#header.fold .navi-showbtn {left:0;}
 
 .navigator {width:230px; height:calc(100vh - 0px); overflow:auto; transition:0.3s all ease;}
 .navigator-left {position:fixed; background:#556573;  height:100%; width:50px; float:left; color:#F2F2F2; text-align:center; z-index:100; animation-name:navicolor; animation-duration:10s; animation-iteration-count:infinite; border-right: 1px solid #73726E;}
@@ -74,12 +74,13 @@ input {font-family: "Medium", sans-serif;}
 .navigator-left .navi-on a {color:#556573;}
 
 .navigator-right {position:absolute; left:50px; color: #F2F2F2; height:100%; width:180px; background:#3A403D; float:right; overflow:auto; transition:all 0.3s ease;} 
-.logobox {position:relative; padding:15px 0; text-align:center; font-size:25px; font-family:"Black"; margin-bottom:10px; cursor:pointer; border-bottom: 1px solid #73726E;}
+.logobox {position:relative; padding:15px 0; text-align:center; font-size:25px; font-family:"Black"; cursor:pointer;}
 /* .logobox:before {width: 15px; height: 2px; background: #556573; content: ""; position: absolute; left: 0; top: 65px; animation-name:logomove; animation-duration:3s; animation-iteration-count:infinite;} */
 .menubox {padding:0 10px; width:100%; font-family:"thin";}
-.mainmenu {font-size:16px; background:#F2F2F2; padding:7px 0; text-align:center; margin-bottom:15px; font-family:"Medium"; cursor:pointer; color: #3A403D;}
+.mainmenu {font-size:16px; text-align:center; margin-bottom:10px; font-family:"Medium"; cursor:pointer; color: #3A403D; border-right: 1px solid #73726E;}
+.mainmenu p {background:#F2F2F2; padding:10px 0;}
 
-.submenu {padding:5px 13px;}
+.submenu {padding:7px 13px;}
 .subbox p, .subbox li {cursor:pointer; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .subbox .subtitlebox:hover, .subbox li:hover {color:#8C8146; transition:all 0.1s ease;}
 .subbox-list ul li:hover:before {background: #8C8146;}
@@ -93,27 +94,50 @@ input {font-family: "Medium", sans-serif;}
 .subtitlebox img.on {transform:rotate(45deg) translate(6px, 3px);}
 
 
-.navi-showbtn {opacity: 0.9; width: 25px; height: 50px; position: absolute; top: 10px; left: 230px; background: #3A403D; padding: 15px 0 0 2px; cursor: pointer; transition: all 0.3s ease;}
+.navi-showbtn {z-index:101; opacity: 0.8; width: 50px; height: 69px; position: absolute; top: 0px; background: #F2F2F2; padding: 25px 0 0 17px; cursor: pointer; transition: all 0.3s ease;}
 .navi-showbtn:hover {opacity:1;}
-.navi-showbtn img {width:20px; height:20px; transition:all 0.5s ease;}
+.navi-showbtn img {width:17px; height:17px; transition:all 0.5s ease;}
 .navi-showbtn .fold {transform:rotate(180deg);}
 
 
-#content {margin-left:230px; overflow:hidden; min-height:500px; transition:all 0.2s ease;}
+#content {margin-left:230px; overflow:hidden;min-height:500px; min-width:798px; transition:all 0.2s ease; position:relative; }
 #content.fold {margin-left:50px;}
 
 .topbar {width: 100%; height: 70px; background-color:#F2F2F2; padding: 10px 35px; position:relative; border-bottom:1px solid #3A403D;}
 .topbar-left {float:left; position:relative;}
-.searchbox {height:100%; border:1px solid #73726E; border-radius:0px; width:200px; padding:0 30px 0 12px; text-align:left; color:#73726E; font-family:"regular";}
-.searchbox::placeholder {color:#73726E;} 
-.searcbox-icon {display:none; position:absolute; transform:translate(-50%, -50%); top:50%; right:3px; width:14px; cursor:pointer;}
+.searchbox {height:100%; border-radius:0px; width:200px; padding:0 45px 0 12px; text-align:left; font-family:"regular"; font-size:14px;}
+.searchbox::placeholder {color:#0d0d0d;} 
+.searchbox:focus {border-bottom:1px solid #3A403D;}
+.searcbox-icon {display:none; position:absolute; transform:translate(-50%, -50%); top:50%; right:3px; cursor:pointer; width:15px;}
 
 .topbar-right {float:right; display:flex; height:100%;}
+.topbar-right li {float:left; height:100%; display:inline-block; line-height:3.4; cursor:pointer;}
+.topbar-right .alarm {background:#fff; color:#f2f2f2; width:50px; text-align:center; margin-right:10px; position:relative;}
+.alarmimg {position:absolute; transform:translate(-50%, -50%); top:30%; left:30%; width:22px; animation-name:alarming; animation-duration:1.3s; animation-iteration-count:infinite}
+/* li.alarm:before {content: ''; width: 5px; height: 5px; border-radius: 3px; background-color: #8C8146; position: absolute; top: 11px; left: 33px;} */
+.topbar-right .userbox {background:#fff; padding:0 10px 0 40px; position:relative; background-image:url(../images/user-border-32.png); background-repeat: no-repeat; background-size: 25px; background-position: 7px 11px;}
+.topbar-right .userbox:hover {background: #8C8146; color: #fff; background-image:url(../images/user-border-whilte-32.png); background-repeat: no-repeat; background-size: 25px; background-position: 7px 11px;}
+.userimg {position:absolute; transform:translate(-50%, -50%); top:50%; left:20px; width:25px;}
 
+.footer {position: static; width: 100%; bottom: 0; height: 100px; background: #fff; margin-top: 35px; padding-top:30px;}
+.footer-text {height:100%; color: #73737385; text-align: right; padding-right:35px; line-height:1.4; font-size:12px;}
+
+.container {padding: 10px 35px; width:100%; display:block; min-height:100vh;}
+.section {width:100%; margin-top:35px; display:block; position:relative; overflow:auto;}
+.box-menu li {float:left; width:calc(25% - 10px); margin-right:10px; margin-bottom:10px; height:200px; background:#ffffff; }
+.box-menu-list:hover {background:#3A403D; color:#ffffff;}
+.box-menu-list {width: 100%; height: 100%; line-height: 11; text-align: center; font-size: 18px; color: #3A403D; transition:all 0.2s ease;}
+.section-title {width:100%; font-size:18px; padding-bottom:15px; font-family:"medium";}
 
 @keyframes navicolor {
     0% {background-color: #3A403D;}
     50% {background-color:#73726E;}
     100% {background-color:#3A403D;}
+}
+
+@keyframes alarming{
+    0% {transform: rotate(20deg);}
+    50% {transform: rotate(-20deg);}
+    100% {transform: rotate(20deg);}
 }
 

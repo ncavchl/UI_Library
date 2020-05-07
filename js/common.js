@@ -13,11 +13,13 @@ $(document).ready(function(){
 
     $('.searchbox').keyup(function(){
         $('.searcbox-icon').css('display','block');
+        $(this).css('border-bottom', '1px solid #3A403D');
     });
 
     $('.searcbox-icon').on('click', function(){
         $('.searchbox').val('');
         $(this).css('display','none');
+        $('.searchbox').css('border-bottom', 'none');
     });
 
 
