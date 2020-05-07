@@ -97,6 +97,7 @@ input {font-family: "Medium", sans-serif;}
 
 
 
+
 .navigator-right {position:absolute; left:50px; color: #F2F2F2; height:100%; width:180px; background:#3A403D; float:right; overflow:auto; transition:all 0.3s ease;} 
 .logobox {position:relative;text-align:center; font-size:25px; font-family:"Black"; cursor:pointer;}
 .logobox a{width:100%; padding:15px 0;}
@@ -157,6 +158,7 @@ input {font-family: "Medium", sans-serif;}
 .box-menu-list:hover {background:#3A403D; color:#ffffff;}
 .box-menu-list {width: 100%; height: 100%; line-height: 11; text-align: center; font-size: 18px; color: #3A403D; transition:all 0.2s ease;}
 .section-title {width:100%; font-size:18px; padding-bottom:15px; font-family:"medium";}
+
 .content-box {background:#fff; padding:20px; margin-bottom:15px;}
 .subtitle {padding-bottom:10px; border-bottom:1px solid #f2f2f2;}
 .content-body {margin-top:15px; font-size:13px; color:#73726E; overflow:auto;}

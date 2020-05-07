@@ -23,8 +23,8 @@
                 <div class="navigator-left">
                     <ul>
                         <li class="mainicon"><a href="main.html" >M</a></li>
-                        <li class="UIicon"><a href="UI-library.html" >UI</a></li>
-                        <li class="settingicon navi-on"><a href="SETTING.html" ></a></li>
+                        <li class="UIicon navi-on"><a href="UI-library.html" >UI</a></li>
+                        <li class="settingicon"><a href="SETTING.html" ></a></li>
                     </ul>
                 </div>
                 <div class="navigator-right">
@@ -32,20 +32,29 @@
                         <a href="main.html">LOGO</a>
                     </div>
                     <div class="mainmenu">
-                        <p>SETTING</p>
+                        <p>UI Library</p>
                      </div>
                     <div class="menubox">
                         <div class="submenu">
                             <div class="subbox">
-                                <a class="subtitlebox" href="#NOTICE">
-                                    <p class="subbox-title">NOTICE</p>
+                                <a class="subtitlebox" href="#BASICUI">
+                                    <p class="subbox-title">Basic-UI</p>
+                                    <img src="../images/whitef2/chevron-right.svg" alt="arrow">
                                 </a>
+                                
+                                <div class="subbox-list">
+                                    <ul>
+                                        <li><a href="basic-ui-alert.html">alert</a></li>
+                                        <li>badge</li>
+                                        <li><a href="basic-ui-button.html">button</a></li>
+                                    </ul>
+                                </div>                                
                             </div>
                         </div>
                         <div class="submenu">
                             <div class="subbox">
-                                <a class="subtitlebox" href="#MY">
-                                    <p class="subbox-title">MY</p>
+                                <a class="subtitlebox" href="#AdvancedUI">
+                                    <p class="subbox-title">Advanced-UI</p>
                                     <img src="../images/whitef2/chevron-right.svg" alt="arrow">
                                 </a>
                                 <div class="subbox-list">
@@ -75,16 +84,19 @@
             <h2 class="blind">topbar</h2>
             <div class="topbar-left">
                 <input class="searchbox" type="text" placeholder="Search">
-                <img class="searcbox-icon" src="../images/black/x.svg"  alt="" title="">
+                <img class="searcbox-icon" src="../images/c1/x.svg"  alt="" title="">
             </div>
             <div class="topbar-right">
                 <ul>
                     <li class="alarm">
-                        <img class="alarmimg" src="../images/black0d/bell.svg" alt="" >
+                        <a href="SETTING.html">
+                          <img class="alarmimg" src="../images/black0d/bell.svg" alt="" >
+                        </a>    
                     </li>
                     <li class="userbox">
-                        <!-- <img class="userimg" src="../images/user-border-32.png" alt="" > -->
-                        <span class="username">USERUSER</span>
+                        <a href="#none">
+                            <span class="username">USERUSER</span>
+                        </a>
                     </li>
                 </ul>
             </div>
