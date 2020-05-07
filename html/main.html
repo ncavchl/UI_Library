@@ -21,17 +21,14 @@
             <div class="navigator">
                 <div class="navigator-left">
                     <ul>
-                        <li class="navi-on"><a href="main.html" alt="">M</a></li>
-                        <li><a href="UI-library.html" alt="">UI</a></li>
-                        <li><a href="#none" alt="">T</a></li>
-                        <li><a href="#none" alt="">T</a></li>
-                        <li><a href="#none" alt="">T</a></li>
-                        <li><a href="#none" alt="">T</a></li>
+                        <li class="mainicon navi-on"><a href="main.html" alt="">M</a></li>
+                        <li class="UIicon"><a href="UI-library.html" alt="">UI</a></li>
+                        <li class="settingicon"><a href="SETTING.html" alt=""></a></li>
                     </ul>
                 </div>
                 <div class="navigator-right">
                     <div class="logobox">
-                        <span>LOGO</span>
+                        <a href="main.html">LOGO</a>
                     </div>
                     <div class="mainmenu">
                         <p>MAIN HOME</p>
@@ -39,35 +36,16 @@
                     <div class="menubox">
                         <div class="submenu">
                             <div class="subbox">
-                                <div class="subtitlebox">
-                                    <p class="subbox-title">Intro</p>
-                                    <img src="../images/arrow.png" alt="arrow">
-                                </div>
-                               
-                                <div class="subbox-list">
-                                    <ul>
-                                        <li>submenu1</li>
-                                        <li>submenu2</li>
-                                        <li>submenu3</li>
-                                        <li>submenu4</li>
-                                    </ul>
-                                </div>                                
+                                <a class="subtitlebox" href="#INTRODUCE">
+                                    <p class="subbox-title">INTRODUCE</p>
+                                </a>
                             </div>
                         </div>
                         <div class="submenu">
                             <div class="subbox">
-                                <div class="subtitlebox">
-                                    <p class="subbox-title">Intro</p>
-                                    <img src="../images/arrow.png" alt="arrow">
-                                </div>
-                                <div class="subbox-list">
-                                    <ul>
-                                        <li>submenu1</li>
-                                        <li>submenu2</li>
-                                        <li>submenu3</li>
-                                        <li>submenu4</li>
-                                    </ul>
-                                </div>
+                                <a class="subtitlebox" href="#ALLMENU">
+                                    <p class="subbox-title">ALL MENU</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -91,11 +69,14 @@
             <div class="topbar-right">
                 <ul>
                     <li class="alarm">
-                        <img class="alarmimg" src="../images/alarm-32.png">
+                        <a href="SETTING.html">
+                          <img class="alarmimg" src="../images/alarm-32.png">
+                        </a>    
                     </li>
                     <li class="userbox">
-                        <!-- <img class="userimg" src="../images/user-border-32.png"> -->
-                        <span class="username">USERUSER</span>
+                        <a href="#none">
+                            <span class="username">USERUSER</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -104,10 +85,27 @@
 
         <div class="container">
             <div class="section">
-                <p class="section-title">INTRODUCE</p>
+                <a name="INTRODUCE"></a>
+                <p class="section-title" >INTRODUCE</p>
+                <div class="content-main">
+                    UI Library를 제공한다.
+                </div>
             </div>
             <div class="section box-menu">
+                <a name="ALLMENU"></a>
                 <p class="section-title">ALL MENU</p>
+                <ul>
+                    <li><a class="box-menu-list" href="#none">boxmenu1</a></li>
+                    <li><a class="box-menu-list" href="#none">boxmenu1</a></li>
+                    <li><a class="box-menu-list" href="#none">boxmenu1</a></li>
+                    <li><a class="box-menu-list" href="#none">boxmenu1</a></li>
+                    <li><a class="box-menu-list" href="#none">boxmenu1</a></li>
+                    
+                </ul>
+            </div>
+            <div class="section box-menu" >
+                <a name=""></a>
+                <p class="section-title" >ALL MENU</p>
                 <ul>
                     <li><a class="box-menu-list" href="#none">boxmenu1</a></li>
                     <li><a class="box-menu-list" href="#none">boxmenu1</a></li>
