@@ -1,4 +1,4 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,15 @@
 <body>
 <div class="wrap">
     <!-- header -->
-    <header id="header">
+    <section id="header">
+        <h1 class="blind">navi 영역</h1>
         <div class="leftbar">
             <div class="navigator">
                 <div class="navigator-left">
                     <ul>
-                        <li class="mainicon navi-on"><a href="main.html" alt="">M</a></li>
-                        <li class="UIicon"><a href="UI-library.html" alt="">UI</a></li>
-                        <li class="settingicon"><a href="SETTING.html" alt=""></a></li>
+                        <li class="mainicon navi-on"><a href="main.html" >M</a></li>
+                        <li class="UIicon"><a href="UI-library.html" >UI</a></li>
+                        <li class="settingicon"><a href="SETTING.html" ></a></li>
                     </ul>
                 </div>
                 <div class="navigator-right">
@@ -56,21 +57,22 @@
             </div>
         </div>
 
-    </header>
+    </section>
     <!-- //header -->
 
     <!-- content -->
     <section id="content">
         <div class="topbar">
+            <h2 class="blind">topbar</h2>
             <div class="topbar-left">
                 <input class="searchbox" type="text" placeholder="Search">
-                <img class="searcbox-icon" src="../images/black/x.svg" alt="" title="">
+                <img class="searcbox-icon" src="../images/black/x.svg"  alt="" title="">
             </div>
             <div class="topbar-right">
                 <ul>
                     <li class="alarm">
                         <a href="SETTING.html">
-                          <img class="alarmimg" src="../images/black0d/bell.svg">
+                          <img class="alarmimg" src="../images/black0d/bell.svg" alt="" >
                         </a>    
                     </li>
                     <li class="userbox">
@@ -86,14 +88,14 @@
         <div class="container">
             <div class="section">
                 <a name="INTRODUCE"></a>
-                <p class="section-title" >INTRODUCE</p>
-                <div class="content-main">
+                <h2 class="section-title">INTRODUCE</h2>
+                <div class="content-box">
                     UI Library를 제공한다.
                 </div>
             </div>
             <div class="section box-menu">
                 <a name="ALLMENU"></a>
-                <p class="section-title">ALL MENU</p>
+                <h2 class="section-title">ALL MENU</h2>
                 <ul>
                     <li><a class="box-menu-list" href="#none">UI LIBRARY</a></li>
                     <li><a class="box-menu-list" href="#none">SETTING</a></li>

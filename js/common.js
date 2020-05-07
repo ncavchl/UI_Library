@@ -1,4 +1,18 @@
 $(document).ready(function(){
+    //헤더 include 용
+    // $(function () { 
+    //     loadHtml();    
+    // }); 
+    // function loadHtml() {
+    //     $("[data]").each(function(){
+    //         var url = $(this).attr("data");
+    //        // alert(url);
+    //         $(this).load(url);
+    //     });
+    // }
+
+
+
 //즉시 실행 함수 예제
     $('.navi-showbtn').on('click',function(){
         $('.navi-showbtn img').toggleClass('fold');

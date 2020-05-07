@@ -1,4 +1,4 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,15 @@
 <body>
 <div class="wrap">
     <!-- header -->
-    <header id="header">
+    <section id="header">
+        <h1 class="blind">navi 영역</h1>
         <div class="leftbar">
             <div class="navigator">
                 <div class="navigator-left">
                     <ul>
-                        <li class="mainicon"><a href="main.html" alt="">M</a></li>
-                        <li class="UIicon"><a href="UI-library.html" alt="">UI</a></li>
-                        <li class="settingicon navi-on"><a href="SETTING.html" alt=""></a></li>
+                        <li class="mainicon"><a href="main.html" >M</a></li>
+                        <li class="UIicon"><a href="UI-library.html" >UI</a></li>
+                        <li class="settingicon navi-on"><a href="SETTING.html" ></a></li>
                     </ul>
                 </div>
                 <div class="navigator-right">
@@ -65,23 +66,24 @@
             </div>
         </div>
 
-    </header>
+    </section>
     <!-- //header -->
 
     <!-- content -->
     <section id="content">
         <div class="topbar">
+            <h2 class="blind">topbar</h2>
             <div class="topbar-left">
                 <input class="searchbox" type="text" placeholder="Search">
-                <img class="searcbox-icon" src="../images/black/x.svg" alt="" title="">
+                <img class="searcbox-icon" src="../images/black/x.svg"  alt="" title="">
             </div>
             <div class="topbar-right">
                 <ul>
                     <li class="alarm">
-                        <img class="alarmimg" src="../images/black0d/bell.svg">
+                        <img class="alarmimg" src="../images/black0d/bell.svg" alt="" >
                     </li>
                     <li class="userbox">
-                        <!-- <img class="userimg" src="../images/user-border-32.png"> -->
+                        <!-- <img class="userimg" src="../images/user-border-32.png" alt="" > -->
                         <span class="username">USERUSER</span>
                     </li>
                 </ul>
@@ -91,16 +93,16 @@
 
         <div class="container">
             <div class="section">
-                <a name="NOTICE"></a>
-                <p class="section-title" >NOTICE</p>
-                <div class="content-main">
+                <!-- <a name="NOTICE"></a> -->
+                <h2 class="section-title">NOTICE</h2>
+                <div class="content-box">
                     알림목록
                 </div>
             </div>
             <div class="section">
-                <a name="MY"></a>
-                <p class="section-title" >MY</p>
-                <div class="content-main">
+                <!-- <a name="MY"></a> -->
+                <h2 class="section-title">MY</h2>
+                <div class="content-box">
                     MY
                 </div>
             </div>
