@@ -36,6 +36,17 @@ $(document).ready(function(){
         $('.searchbox').css('border-bottom', 'none');
     });
 
+    //alert dismissing
+    $(".dismissing").on('click',function(){
+        var parent = $(this).parent('li');
+        //console.log(parent.text());
+        parent.remove();
+        if($('.temt .alert-ul').text() == null){
+            alert('f');
+        }
+
+    });
+
     // $('.clickk').on('click', function(){
     //     $('.alarmimg').css('animation-duration', '-0.5s');
     // });
