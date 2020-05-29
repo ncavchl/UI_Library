@@ -9,9 +9,27 @@
     <!-- 파비콘 추가하기 -->
     <!-- css -->
     <link href="../css/common.css" rel="stylesheet">
+    <style>
+        .ui-tooltip {
+            padding:3px 5px;
+            text-align:center;
+           border-radius:10px;
+            display:block;
+            width:200px;
+            color:#fff;
+            font-size:13px;
+            background:#01bcd5e6;
+        }
+    </style>
     <!-- js -->
     <script src="../js/jquery-3.5.0.min.js"></script>
     <script src="../js/common.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $(document).tooltip();
+        });
+    </script>
 </head>
 <body>
 <div class="wrap">
@@ -107,49 +125,17 @@
 
         <div class="container">
             <div class="section">
-                <h2 class="section-title">BADGE</h2>
+                <h2 class="section-title">TOOLTIP</h2>
                 <div class="content-box">
-                    <h3 class="subtitle">Contextual variations</h3>
+                    <h3 class="subtitle">TOOLTIP ON TOP</h3>
                     <div class="content-body">
-                        기본 BADGE 디자인
-                        <ul class="badge-ul">
-                            <span class="badge badge-primary">Primary</span>
-                            <span class="badge badge-secondary">Secondary</span>
-                            <span class="badge badge-success">Success</span>
-                            <span class="badge badge-danger">Danger</span>
-                            <span class="badge badge-warning">Warning</span>
-                            <span class="badge badge-dark">Dark</span>
+                        기본 tooltip on top 디자인
+                        <ul class="button-ul">
+                            <li><button class="button-basic" title="test 가나다라마바사">Primary</button></li>
                         </ul>
                     </div>
                 </div>
-                <div class="content-box">
-                    <h3 class="subtitle">PILL BADGE</h3>
-                    <div class="content-body">
-                        Pill BADGE 디자인
-                        <ul class="badge-ul">
-                            <span class="badge badge-primary badge-round">Primary</span>
-                            <span class="badge badge-secondary badge-round">Secondary</span>
-                            <span class="badge badge-success badge-round">Success</span>
-                            <span class="badge badge-danger badge-round">Danger</span>
-                            <span class="badge badge-warning badge-round">Warning</span>
-                            <span class="badge badge-dark badge-round">Dark</span>
-                        </ul>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <h3 class="subtitle">LINKS BADGE</h3>
-                    <div class="content-body">
-                        Links BADGE 디자인
-                        <ul class="badge-ul">
-                            <a class="badge badge-primary">Primary</a>
-                            <a class="badge badge-secondary">Secondary</a>
-                            <a class="badge badge-success">Success</a>
-                            <a class="badge badge-danger">Danger</a>
-                            <a class="badge badge-warning">Warning</a>
-                            <a class="badge badge-dark">Dark</a>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
         </div>
 
