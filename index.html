@@ -1,4 +1,4 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -8,88 +8,100 @@
     <!-- Favicon -->
     <!-- 파비콘 추가하기 -->
     <!-- css -->
-    <link href="/css/common.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
     <!-- js -->
-    <script src="/js/jquery-3.5.0.min.js"></script>
-    <script src="/js/common.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/common.js"></script>
 </head>
 <body>
 <div class="wrap">
     <!-- header -->
-    <header id="header">
+    <section id="header">
+        <h1 class="blind">navi 영역</h1>
         <div class="leftbar">
             <div class="navigator">
                 <div class="navigator-left">
                     <ul>
-                        <li class="navi-on"><a href="/html/main.html" alt="">M</a></li>
-                        <li><a href="/html/UI-library.html" alt="">UI</a></li>
-                        <li><a href="#none" alt="">T</a></li>
-                        <li><a href="#none" alt="">T</a></li>
-                        <li><a href="#none" alt="">T</a></li>
-                        <li><a href="#none" alt="">T</a></li>
+                        <li class="mainicon navi-on"><a href="/html/main.html" >M</a></li>
+                        <li class="UIicon"><a href="/html/UI-library.html" >UI</a></li>
+                        <li class="settingicon"><a href="/html/SETTING.html" ></a></li>
                     </ul>
                 </div>
                 <div class="navigator-right">
                     <div class="logobox">
-                        <span>LOGO</span>
+                        <a href="main.html">LOGO</a>
                     </div>
+                    <div class="mainmenu">
+                        <p>MAIN HOME</p>
+                     </div>
                     <div class="menubox">
-                        <div class="mainmenu">
-                           <p>MAIN HOME</p>
-                        </div>
                         <div class="submenu">
                             <div class="subbox">
-                                <div class="subtitlebox">
-                                    <p class="subbox-title">Intro</p>
-                                    <img src="/images/menu-arrow.png" alt="arrow">
-                                </div>
-                               
-                                <div class="subbox-list">
-                                    <ul>
-                                        <li>submenu1</li>
-                                        <li>submenu2</li>
-                                        <li>submenu3</li>
-                                        <li>submenu4</li>
-                                    </ul>
-                                </div>                                
+                                <a class="subtitlebox" href="#INTRODUCE">
+                                    <p class="subbox-title">INTRODUCE</p>
+                                </a>
                             </div>
                         </div>
                         <div class="submenu">
                             <div class="subbox">
-                                <div class="subtitlebox">
-                                    <p class="subbox-title">Intro</p>
-                                    <img src="/images/menu-arrow.png" alt="arrow">
-                                </div>
-                                <div class="subbox-list">
-                                    <ul>
-                                        <li>submenu1</li>
-                                        <li>submenu2</li>
-                                        <li>submenu3</li>
-                                        <li>submenu4</li>
-                                    </ul>
-                                </div>
+                                <a class="subtitlebox" href="#ALLMENU">
+                                    <p class="subbox-title">ALL MENU</p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="navi-showbtn">
-                <img src="/images/arrow.png" alt="arrow">
+                <img src="../images/gray/chevron-right.svg" alt="arrow" class="">
             </div>
         </div>
 
-    </header>
+    </section>
     <!-- //header -->
 
     <!-- content -->
     <section id="content">
         <div class="topbar">
-content-top
+            <h2 class="blind">topbar</h2>
+            <div class="topbar-left">
+                <input class="searchbox" type="text" placeholder="Search">
+                <img class="searcbox-icon" src="../images/c1/x.svg"  alt="" title="">
+            </div>
+            <div class="topbar-right">
+                <ul>
+                    <li class="alarm">
+                        <a href="SETTING.html">
+                          <img class="alarmimg" src="../images/black0d/bell.svg" alt="" >
+                        </a>    
+                    </li>
+                    <li class="userbox">
+                        <a href="#none">
+                            <span class="username">USERUSER</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
+
         <div class="container">
-container
+            <div class="section">
+                <a name="INTRODUCE"></a>
+                <h2 class="section-title">FIRST</h2>
+                <div class="content-box">
+                    첫화면 index
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="footer">
+            <p class="footer-text">E-mail : 054637@naver.com<br>© 2020 CHL - All Rights Reserved.</p>
         </div>
     </section>
+
+
     <!-- //content -->
 </div>
 </body>
