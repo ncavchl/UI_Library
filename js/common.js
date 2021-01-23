@@ -33,7 +33,7 @@ $(document).ready(function(){
     $('.searcbox-icon').on('click', function(){
         $('.searchbox').val('');
         $(this).css('display','none');
-        $('.searchbox').css('border-bottom', 'none');
+        $('.searchbox').css('border-bottom', '1px solid #fff');
     });
 
     //alert dismissing
